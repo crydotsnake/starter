@@ -2,7 +2,7 @@
 
 Static multi-lang landing page, built with [Astro](https://astro.build).
 
-Live (GitHub Pages project site): [https://the-swan-foundation.github.io/the-swan-starter.github.io/](https://the-swan-foundation.github.io/the-swan-starter.github.io/)
+Live (GitHub Pages project site): [https://the-swan-foundation.github.io/the-swan-starter-website/](https://the-swan-foundation.github.io/the-swan-starter-website/)
 
 ## Prerequisites
 
@@ -12,12 +12,12 @@ Live (GitHub Pages project site): [https://the-swan-foundation.github.io/the-swa
 
 ```bash
 npm install     # install dependencies
-npm run dev     # http://localhost:4321/the-swan-starter.github.io/
+npm run dev     # http://localhost:4321/the-swan-starter-website/
 npm run build   # output to dist/
-npm run preview # http://localhost:4321/the-swan-starter.github.io/ after build
+npm run preview # http://localhost:4321/the-swan-starter-website/ after build
 ```
 
-`astro.config.mjs` defaults to `SITE_URL=https://the-swan-foundation.github.io` and `ASTRO_BASE=/the-swan-starter.github.io/`, so local and CI builds need no extra variables. The dev server serves the site at http://localhost:4321/the-swan-starter.github.io/.
+`astro.config.mjs` defaults to `SITE_URL=https://the-swan-foundation.github.io` and `ASTRO_BASE=/the-swan-starter-website/`, so local and CI builds need no extra variables. The dev server serves the site at http://localhost:4321/the-swan-starter-website/.
 
 ## Editing content
 
@@ -39,7 +39,7 @@ The workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) buil
 
 In the repository settings, **Settings → Pages → Build and deployment → Source** must be set to **GitHub Actions**. With "Deploy from a branch", GitHub also runs its default Jekyll build on the raw sources, which fails on the `.astro` files.
 
-The repository is not named `the-swan-foundation.github.io`, so GitHub Pages serves it as a project site, under the `/the-swan-starter.github.io/` sub-path. There is no `public/CNAME`.
+The repository is not named `the-swan-foundation.github.io`, so GitHub Pages serves it as a project site, under the `/the-swan-starter-website/` sub-path. There is no `public/CNAME`.
 
 ### Custom domain (later)
 
