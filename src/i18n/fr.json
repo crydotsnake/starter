@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Sylius Starter · Votre boutique e-commerce souveraine, prête en quelques jours",
-    "description": "Sylius Starter est un outil en ligne de commande qui crée votre boutique e-commerce complète en une seule commande. Hébergement libre, sans commission sur vos ventes."
+    "title": "The Swan Starter · Votre boutique e-commerce souveraine, prête en quelques jours",
+    "description": "The Swan Starter est un outil en ligne de commande qui crée votre boutique e-commerce complète en une seule commande. Hébergement libre, sans commission sur vos ventes."
   },
   "lang": {
     "label": "Langue",
@@ -14,10 +14,10 @@
   },
   "announce": {
     "tag": "Nouveau",
-    "textHtml": "Contributeurs : rejoignez-nous, Sylius Starter se construit ensemble."
+    "textHtml": "Contributeurs : rejoignez-nous, The Swan Starter se construit ensemble."
   },
   "nav": {
-    "why": "Pourquoi Sylius Starter",
+    "why": "Pourquoi The Swan Starter",
     "sovereignty": "Souveraineté",
     "developers": "Développeurs",
     "github": "GitHub ↗",
@@ -25,12 +25,12 @@
   },
   "hero": {
     "title": "Votre boutique e‑commerce souveraine, prête en quelques jours.",
-    "leadHtml": "Sylius Starter est un outil en ligne de commande qui crée votre boutique e‑commerce complète, prête à être adaptée par votre équipe ou un partenaire. Vous l'hébergez où vous voulez, <strong>sans commission sur vos ventes</strong>.",
+    "leadHtml": "The Swan Starter est un outil en ligne de commande qui crée votre boutique e‑commerce complète, prête à être adaptée par votre équipe ou un partenaire. Vous l'hébergez où vous voulez, <strong>sans commission sur vos ventes</strong>.",
     "alt": "Exemple de boutique Sylius : page produit"
   },
   "own": {
     "title": "Pourquoi sortir d'une solution par abonnement",
-    "intro": "Sur une solution par abonnement, vous payez chaque mois, souvent une commission sur vos ventes, et vos données restent chez l'éditeur. Avec Sylius Starter, votre boutique et vos données sont chez vous.",
+    "intro": "Sur une solution par abonnement, vous payez chaque mois, souvent une commission sur vos ventes, et vos données restent chez l'éditeur. Avec The Swan Starter, votre boutique et vos données sont chez vous.",
     "rentTitle": "Solution par abonnement",
     "rentItems": [
       "L'abonnement augmente avec votre chiffre d'affaires",
@@ -38,7 +38,7 @@
       "Un export de vos données limité à ce que l'éditeur autorise",
       "Les évolutions dépendent de l'éditeur"
     ],
-    "ownTitle": "Sylius Starter",
+    "ownTitle": "The Swan Starter",
     "ownItems": [
       "Pas d'abonnement à la plateforme, pas de commission sur les ventes",
       "Votre boutique et vos données vous appartiennent",
@@ -69,7 +69,7 @@
     ]
   },
   "found": {
-    "leadHtml": "Sylius Starter est un ensemble de commandes Castor (<a href=\"https://castor.jolicode.com\" target=\"_blank\" rel=\"noopener\">mais qu'est-ce que Castor au fait ?</a>) autour d'un projet Sylius standard. Vous créez un projet, puis vous ajoutez ou retirez des fonctionnalités au fil des besoins. Votre projet reste standard : n'importe quelle équipe Symfony sait le reprendre.",
+    "leadHtml": "The Swan Starter est un ensemble de commandes Castor (<a href=\"https://castor.jolicode.com\" target=\"_blank\" rel=\"noopener\">mais qu'est-ce que Castor au fait ?</a>) autour d'un projet Sylius standard. Vous créez un projet, puis vous ajoutez ou retirez des fonctionnalités au fil des besoins. Votre projet reste standard : n'importe quelle équipe Symfony sait le reprendre.",
     "dev": {
       "title": "Vous êtes développeur ?"
     },
@@ -114,7 +114,7 @@
     ]
   },
   "supporters": {
-    "label": "Ils soutiennent Sylius Starter",
+    "label": "Ils soutiennent The Swan Starter",
     "logos": []
   },
   "event": {

@@ -27,4 +27,4 @@ npm run dev      # local development
 npm run build    # generates dist/
 ```
 
-Run commands from the `website/` directory inside the `sylius-starter` repository.
+Run commands from the repository root.

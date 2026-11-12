@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Sylius Starter · Your sovereign e-commerce store, ready in a few days",
-    "description": "Sylius Starter is a command-line tool that creates your complete e-commerce store in a single command. Host it anywhere, with no commission on your sales."
+    "title": "The Swan Starter · Your sovereign e-commerce store, ready in a few days",
+    "description": "The Swan Starter is a command-line tool that creates your complete e-commerce store in a single command. Host it anywhere, with no commission on your sales."
   },
   "lang": {
     "label": "Language",
@@ -14,10 +14,10 @@
   },
   "announce": {
     "tag": "New",
-    "textHtml": "Contributors: join us, Sylius Starter is built together."
+    "textHtml": "Contributors: join us, The Swan Starter is built together."
   },
   "nav": {
-    "why": "Why Sylius Starter",
+    "why": "Why The Swan Starter",
     "sovereignty": "Sovereignty",
     "developers": "Developers",
     "github": "GitHub ↗",
@@ -25,12 +25,12 @@
   },
   "hero": {
     "title": "Your sovereign e‑commerce store, ready in a few days.",
-    "leadHtml": "Sylius Starter is a command-line tool that creates your complete e‑commerce store, ready to be tailored by your team or a partner. Host it wherever you like, <strong>with no commission on your sales</strong>.",
+    "leadHtml": "The Swan Starter is a command-line tool that creates your complete e‑commerce store, ready to be tailored by your team or a partner. Host it wherever you like, <strong>with no commission on your sales</strong>.",
     "alt": "Example Sylius store: product page"
   },
   "own": {
     "title": "Why move away from a subscription platform",
-    "intro": "On a subscription platform, you pay every month, often a commission on your sales, and your data stays with the vendor. With Sylius Starter, your store and your data stay with you.",
+    "intro": "On a subscription platform, you pay every month, often a commission on your sales, and your data stays with the vendor. With The Swan Starter, your store and your data stay with you.",
     "rentTitle": "Subscription platform",
     "rentItems": [
       "The subscription goes up with your revenue",
@@ -38,7 +38,7 @@
       "Exporting your data is limited to what the vendor allows",
       "The roadmap is up to the vendor"
     ],
-    "ownTitle": "Sylius Starter",
+    "ownTitle": "The Swan Starter",
     "ownItems": [
       "No platform subscription, no commission on sales",
       "Your store and your data belong to you",
@@ -69,7 +69,7 @@
     ]
   },
   "found": {
-    "leadHtml": "Sylius Starter is a set of Castor commands (<a href=\"https://castor.jolicode.com\" target=\"_blank\" rel=\"noopener\">wait, what is Castor?</a>) around a standard Sylius project. You create a project, then add or remove features as your needs evolve. Your project stays standard: any Symfony team can pick it up.",
+    "leadHtml": "The Swan Starter is a set of Castor commands (<a href=\"https://castor.jolicode.com\" target=\"_blank\" rel=\"noopener\">wait, what is Castor?</a>) around a standard Sylius project. You create a project, then add or remove features as your needs evolve. Your project stays standard: any Symfony team can pick it up.",
     "dev": {
       "title": "Are you a developer?"
     },
@@ -114,7 +114,7 @@
     ]
   },
   "supporters": {
-    "label": "They support Sylius Starter",
+    "label": "They support The Swan Starter",
     "logos": []
   },
   "event": {

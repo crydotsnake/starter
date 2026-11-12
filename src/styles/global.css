@@ -103,6 +103,7 @@ nav {
 .nav-in { display: flex; align-items: center; justify-content: space-between; height: 66px; }
 .brand { font-family: var(--display); font-weight: 800; font-size: 1.3rem; letter-spacing: -.05em;
     text-decoration: none; color: var(--ink); display: flex; align-items: center; gap: .55rem; white-space: nowrap; }
+.brand .brand-logo { width: auto; height: 32px; flex-shrink: 0; }
 .brand .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan-ink); display: inline-block; margin-top: 3px; }
 .nav-links { display: flex; align-items: center; gap: 1.1rem; }
 .nav-links a { text-decoration: none; color: var(--ink-soft); font-size: .88rem; transition: color .15s; white-space: nowrap; }
