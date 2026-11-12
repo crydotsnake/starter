@@ -1,8 +1,8 @@
-# Sylius Starter: Deploy
+# The Swan Starter: Deploy
 
 Static multi-lang landing page, built with [Astro](https://astro.build).
 
-Live (GitHub Pages organization site): [https://sylius-starter.github.io/](https://sylius-starter.github.io/)
+Live (GitHub Pages project site): [https://the-swan-foundation.github.io/the-swan-starter.github.io/](https://the-swan-foundation.github.io/the-swan-starter.github.io/)
 
 ## Prerequisites
 
@@ -12,12 +12,12 @@ Live (GitHub Pages organization site): [https://sylius-starter.github.io/](https
 
 ```bash
 npm install     # install dependencies
-npm run dev     # http://localhost:4321/
+npm run dev     # http://localhost:4321/the-swan-starter.github.io/
 npm run build   # output to dist/
-npm run preview # http://localhost:4321/ after build
+npm run preview # http://localhost:4321/the-swan-starter.github.io/ after build
 ```
 
-`astro.config.mjs` defaults to `SITE_URL=https://sylius-starter.github.io` and `ASTRO_BASE=/`, so local and CI builds need no extra variables.
+`astro.config.mjs` defaults to `SITE_URL=https://the-swan-foundation.github.io` and `ASTRO_BASE=/the-swan-starter.github.io/`, so local and CI builds need no extra variables. The dev server serves the site at http://localhost:4321/the-swan-starter.github.io/.
 
 ## Editing content
 
@@ -39,14 +39,12 @@ The workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) buil
 
 In the repository settings, **Settings → Pages → Build and deployment → Source** must be set to **GitHub Actions**. With "Deploy from a branch", GitHub also runs its default Jekyll build on the raw sources, which fails on the `.astro` files.
 
-`public/CNAME` contains `sylius-starter.github.io`.
+The repository is not named `the-swan-foundation.github.io`, so GitHub Pages serves it as a project site, under the `/the-swan-starter.github.io/` sub-path. There is no `public/CNAME`.
 
 ### Custom domain (later)
 
 To serve the site from a custom domain at the root:
 
-1. Replace the content of `public/CNAME` with the domain name
-2. Change the `site` default in `astro.config.mjs` (or set `SITE_URL` in the workflow) to the new URL, so canonical and `hreflang` links are correct
+1. Create `public/CNAME` with the domain name
+2. Change the `site` default in `astro.config.mjs` to the new URL and the `base` default to `/` (or set `SITE_URL` and `ASTRO_BASE` in the workflow), so canonical and `hreflang` links are correct
 3. Configure DNS and the custom domain in GitHub Pages settings
-
-Only set `ASTRO_BASE` if the site is ever served from a sub-path.
