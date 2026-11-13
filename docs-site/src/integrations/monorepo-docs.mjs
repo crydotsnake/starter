@@ -3,7 +3,7 @@ import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 /**
- * Copies the Markdown documentation of the the-swan-starter monorepo into the Starlight content collection.
+ * Copies the Markdown documentation of the colibri-starter monorepo into the Starlight content collection.
  *
  * The monorepo `docs/` folder stays the source of truth, so its pages keep reading on GitHub: the copy lands in
  * `src/content/docs/` (git-ignored) with its images, each page gets an `editUrl` pointing back to the monorepo, and the
@@ -22,7 +22,7 @@ export default function monorepoDocs({ source, repository, branch = 'main' }) {
 
                 if (!existsSync(sourceDir)) {
                     throw new Error(
-                        `Documentation not found in "${sourceDir}". Clone the-swan-foundation/the-swan-starter next to the-swan-foundation/starter, or set DOCS_DIR.`,
+                        `Documentation not found in "${sourceDir}". Clone open-colibri/colibri-starter next to open-colibri/starter, or set DOCS_DIR.`,
                     );
                 }
 
