@@ -14,7 +14,7 @@ The site is built with **Astro** from `src/`.
 
 | Action | File |
 |--------|------|
-| Copy + locale registry | `src/i18n/*.json` + `src/i18n/locales.ts` |
+| Copy + locale metadata | `src/i18n/*.json` |
 | HTML structure | `src/components/Landing.astro` |
 | CSS | `src/styles/global.css` |
 | Build | `npm run build` → `dist/` |

@@ -1,19 +1,17 @@
 ---
-import { defaultLocale, localeConfig, localePath } from '../i18n/utils';
-import { getTranslations } from '../i18n/utils';
+import { defaultLocale, localeConfig, localePath, getTranslations } from '../i18n/utils';
 
-const t = getTranslations('en');
+const t = getTranslations(defaultLocale);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const defaultPath = localePath(defaultLocale);
-const localeMatchers = localeConfig.map((l) => ({
-  code: l.code,
-  match: l.match,
-  path: localePath(l.code),
+const localeMatchers = localeConfig.map((locale) => ({
+  match: locale.match,
+  path: localePath(locale.code),
 }));
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={defaultLocale}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />

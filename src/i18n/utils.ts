@@ -1,9 +1,7 @@
 import en from './en.json';
-import fr from './fr.json';
-import ro from './ro.json';
-import de from './de.json';
 import {
   defaultLocale,
+  localeCatalogs,
   localeConfig,
   locales,
   type Locale,
@@ -12,15 +10,13 @@ import {
 export type { Locale };
 export { defaultLocale, localeConfig, locales };
 
-export type Translations = typeof en;
-
-const catalogs: Record<Locale, Translations> = { en, fr, ro, de };
+export type Translations = Omit<typeof en, 'locale'>;
 
 export function getTranslations(locale: string): Translations {
-  if (!locales.includes(locale as Locale)) {
+  if (!locales.includes(locale)) {
     throw new Error(`Unknown locale: ${locale}`);
   }
-  return catalogs[locale as Locale];
+  return localeCatalogs[locale];
 }
 
 export function localePath(locale: Locale, path = ''): string {

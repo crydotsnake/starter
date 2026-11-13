@@ -1,4 +1,9 @@
 {
+  "locale": {
+    "label": "Deutsch",
+    "hreflang": "de",
+    "match": ["de"]
+  },
   "meta": {
     "title": "Colibri Starter · Ihr souveräner Onlineshop, startklar in wenigen Tagen",
     "description": "Colibri Starter ist ein Kommandozeilen-Tool, das Ihren kompletten Onlineshop mit einem einzigen Befehl erstellt. Hosten Sie ihn, wo Sie möchten, ohne Provision auf Ihre Umsätze."

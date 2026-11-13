@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Landing from '../../components/Landing.astro';
+import { getTranslations, localeConfig, type Locale, type Translations } from '../../i18n/utils';
+
+interface Props {
+  locale: Locale;
+  t: Translations;
+}
+
+export function getStaticPaths() {
+  return localeConfig.map(({ code }) => ({
+    params: { locale: code },
+    props: { locale: code, t: getTranslations(code) },
+  }));
+}
+
+const { locale, t } = Astro.props;
+---
+
+<Layout locale={locale} t={t}>
+  <Landing locale={locale} t={t} />
+</Layout>
