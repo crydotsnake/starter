@@ -1,16 +1,16 @@
-# The Swan Starter documentation
+# Colibri Starter documentation
 
-The website of the [The Swan Starter](https://github.com/the-swan-foundation/the-swan-starter) documentation, built with
-[Astro Starlight](https://starlight.astro.build): [https://the-swan-foundation.github.io/starter/docs/](https://the-swan-foundation.github.io/starter/docs/).
+The website of the [Colibri Starter](https://github.com/open-colibri/colibri-starter) documentation, built with
+[Astro Starlight](https://starlight.astro.build): [https://open-colibri.github.io/starter/docs/](https://open-colibri.github.io/starter/docs/).
 
 The pages are **not** in this folder: they live in the `docs/` folder of the
-[the-swan-foundation/the-swan-starter](https://github.com/the-swan-foundation/the-swan-starter/tree/main/docs) monorepo, next to the
+[open-colibri/colibri-starter](https://github.com/open-colibri/colibri-starter/tree/main/docs) monorepo, next to the
 code they describe, and read on GitHub too. Open documentation issues and pull requests there.
 
 ## Prerequisites
 
 - Node.js 22.12+
-- The monorepo cloned next to this repository (`../../the-swan-starter` from this folder), or `DOCS_DIR` pointing to its
+- The monorepo cloned next to this repository (`../../colibri-starter` from this folder), or `DOCS_DIR` pointing to its
   `docs/` folder
 
 ## Commands
@@ -28,7 +28,7 @@ npm run preview # http://localhost:4321/starter/docs/ after build
 |------|-------|
 | Pages | `docs/` of the monorepo |
 | Sidebar | `starlight.sidebar` in `astro.config.mjs` |
-| Styles | `src/styles/docs.css` (palette of the [landing](https://the-swan-foundation.github.io/starter/)) |
+| Styles | `src/styles/docs.css` (palette of the [landing](https://open-colibri.github.io/starter/)) |
 | Copy of the pages | `src/integrations/monorepo-docs.mjs` |
 | Links rewriting | `src/integrations/rehype-docs-links.mjs` |
 

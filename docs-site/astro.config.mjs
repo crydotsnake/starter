@@ -9,13 +9,13 @@ import monorepoDocs from './src/integrations/monorepo-docs.mjs';
 import rehypeDocsLinks from './src/integrations/rehype-docs-links.mjs';
 import { themesSidebar } from './src/integrations/themes-sidebar.mjs';
 
-// Served under the website, at https://the-swan-foundation.github.io/starter/docs/: the deployment workflow of the
+// Served under the website, at https://open-colibri.github.io/starter/docs/: the deployment workflow of the
 // repository builds this folder with this base and copies dist/ to the docs/ folder of the website.
-const site = process.env.SITE_URL ?? 'https://the-swan-foundation.github.io';
+const site = process.env.SITE_URL ?? 'https://open-colibri.github.io';
 const base = process.env.ASTRO_BASE ?? '/starter/docs/';
-// The docs/ folder of the the-swan-foundation/the-swan-starter monorepo, checked out next to the repository by default.
-const docsDir = process.env.DOCS_DIR ?? '../../the-swan-starter/docs';
-const repository = 'the-swan-foundation/the-swan-starter';
+// The docs/ folder of the open-colibri/colibri-starter monorepo, checked out next to the repository by default.
+const docsDir = process.env.DOCS_DIR ?? '../../colibri-starter/docs';
+const repository = 'open-colibri/colibri-starter';
 
 export default defineConfig({
   site,
@@ -31,7 +31,7 @@ export default defineConfig({
   integrations: [
     monorepoDocs({ source: docsDir, repository }),
     starlight({
-      title: 'The Swan Starter',
+      title: 'Colibri Starter',
       logo: { src: './src/assets/logo.png' },
       favicon: '/favicon.ico',
       description: 'Castor packages to build, configure and operate a Sylius application.',
@@ -60,7 +60,7 @@ export default defineConfig({
         { label: 'Extending', items: [{ autogenerate: { directory: 'extending' } }] },
         { label: 'Storefront slots', items: [{ autogenerate: { directory: 'storefront' } }] },
         { label: 'Contributing', items: [{ autogenerate: { directory: 'contributing' } }] },
-        { label: 'The Swan Starter website', link: 'https://the-swan-foundation.github.io/starter/', attrs: { target: '_blank' } },
+        { label: 'Colibri Starter website', link: 'https://open-colibri.github.io/starter/', attrs: { target: '_blank' } },
       ],
       plugins: [starlightLinksValidator(), starlightLlmsTxt()],
     }),
