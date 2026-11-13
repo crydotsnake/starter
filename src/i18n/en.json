@@ -1,4 +1,9 @@
 {
+  "locale": {
+    "label": "English",
+    "hreflang": "en",
+    "match": ["en"]
+  },
   "meta": {
     "title": "Colibri Starter · Your sovereign e-commerce store, ready in a few days",
     "description": "Colibri Starter is a command-line tool that creates your complete e-commerce store in a single command. Host it anywhere, with no commission on your sales."

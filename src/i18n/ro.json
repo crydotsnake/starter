@@ -1,4 +1,9 @@
 {
+  "locale": {
+    "label": "Română",
+    "hreflang": "ro",
+    "match": ["ro"]
+  },
   "meta": {
     "title": "Colibri Starter · Magazinul tău online independent, gata în câteva zile",
     "description": "Colibri Starter este un instrument în linie de comandă care îți creează magazinul online complet cu o singură comandă. Îl găzduiești oriunde, fără comision la vânzări."

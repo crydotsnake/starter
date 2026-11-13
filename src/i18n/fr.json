@@ -1,4 +1,9 @@
 {
+  "locale": {
+    "label": "Français",
+    "hreflang": "fr",
+    "match": ["fr"]
+  },
   "meta": {
     "title": "Colibri Starter · Votre boutique e-commerce souveraine, prête en quelques jours",
     "description": "Colibri Starter est un outil en ligne de commande qui crée votre boutique e-commerce complète en une seule commande. Hébergement libre, sans commission sur vos ventes."

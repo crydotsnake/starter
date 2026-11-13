@@ -23,13 +23,13 @@ npm run preview # http://localhost:4321/starter/ after build
 
 | What | Where |
 |------|--------|
-| Copy (per language) | `src/i18n/<code>.json` |
+| Copy and locale metadata | `src/i18n/<code>.json` |
 | Layout / sections | `src/components/Landing.astro` |
 | Styles | `src/styles/global.css` |
 | Fonts, `<head>` | `src/layouts/Layout.astro` |
-| Language switcher | `src/components/LangSwitcher.astro` + `src/i18n/locales.ts` |
+| Locale discovery and language switcher | `src/i18n/locales.ts` + `src/components/LangSwitcher.astro` |
 
-To add a language: create `src/i18n/<code>.json`, register it in `src/i18n/locales.ts`, and add `src/pages/<code>/index.astro`.
+To add a language, create `src/i18n/<code>.json` with its `locale` metadata (`label`, `hreflang`, and browser-language `match` prefixes) and translated copy. The build discovers the file and generates `/<code>/`; no shared registry or page file needs to be edited.
 
 The root `/` page redirects to the visitor's browser language (English by default).
 

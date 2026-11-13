@@ -1,13 +1,26 @@
-export const localeConfig = [
-  { code: 'en', label: 'English', hreflang: 'en', match: ['en'] },
-  { code: 'fr', label: 'Français', hreflang: 'fr', match: ['fr'] },
-  { code: 'ro', label: 'Română', hreflang: 'ro', match: ['ro'] },
-  { code: 'de', label: 'Deutsch', hreflang: 'de', match: ['de'] },
-] as const;
+import en from './en.json';
 
-export type Locale = (typeof localeConfig)[number]['code'];
+type LocaleCatalog = typeof en;
 
-export const locales = localeConfig.map((l) => l.code) as Locale[];
+export type Locale = string;
+
+const catalogModules = import.meta.glob<LocaleCatalog>('./*.json', {
+  eager: true,
+  import: 'default',
+});
+
+export const localeCatalogs = Object.fromEntries(
+  Object.entries(catalogModules).map(([path, catalog]) => [
+    path.replace(/^\.\//, '').replace(/\.json$/, ''),
+    catalog,
+  ]),
+) as Record<Locale, LocaleCatalog>;
+
+export const localeConfig = Object.entries(localeCatalogs)
+  .map(([code, catalog]) => ({ code, ...catalog.locale }))
+  .sort((a, b) => a.code.localeCompare(b.code));
+
+export const locales = localeConfig.map((locale) => locale.code);
 
 export const defaultLocale: Locale = 'en';
 
