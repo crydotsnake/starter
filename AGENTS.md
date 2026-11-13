@@ -30,3 +30,7 @@ npm run build    # generates dist/
 ```
 
 Run commands from the repository root.
+
+## Commits
+
+Write no AI attribution lines in a commit message or a PR body: no `Co-Authored-By` line for an AI model and no `Claude-Session` line.
