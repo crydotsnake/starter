@@ -1,5 +1,6 @@
 import en from './en.json';
 import fr from './fr.json';
+import ro from './ro.json';
 import {
   defaultLocale,
   localeConfig,
@@ -12,7 +13,7 @@ export { defaultLocale, localeConfig, locales };
 
 export type Translations = typeof en;
 
-const catalogs: Record<Locale, Translations> = { en, fr };
+const catalogs: Record<Locale, Translations> = { en, fr, ro };
 
 export function getTranslations(locale: string): Translations {
   if (!locales.includes(locale as Locale)) {

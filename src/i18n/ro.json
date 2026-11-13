@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Colibri Starter · Magazinul tău online independent, gata în câteva zile",
+    "description": "Colibri Starter este un instrument în linie de comandă care îți creează magazinul online complet cu o singură comandă. Îl găzduiești oriunde, fără comision la vânzări."
+  },
+  "lang": {
+    "label": "Limba",
+    "en": "EN",
+    "fr": "FR",
+    "ro": "RO"
+  },
+  "redirect": {
+    "title": "Redirecționare…",
+    "manual": "Alege o limbă:"
+  },
+  "announce": {
+    "tag": "Nou",
+    "textHtml": "Contributori: alăturați-vă, Colibri Starter se construiește împreună."
+  },
+  "nav": {
+    "why": "De ce Colibri Starter",
+    "sovereignty": "Independență",
+    "developers": "Dezvoltatori",
+    "github": "GitHub ↗",
+    "menu": "Meniu"
+  },
+  "hero": {
+    "title": "Magazinul tău online independent, gata în câteva zile.",
+    "leadHtml": "Colibri Starter este un instrument în linie de comandă care îți creează magazinul online complet, gata să fie adaptat de echipa ta sau de un partener. Îl găzduiești unde vrei, <strong>fără comision la vânzări</strong>.",
+    "alt": "Exemplu de magazin Sylius: pagină de produs"
+  },
+  "own": {
+    "title": "De ce să renunți la o platformă cu abonament",
+    "intro": "Pe o platformă cu abonament plătești în fiecare lună, adesea și un comision la vânzări, iar datele tale rămân la furnizor. Cu Colibri Starter, magazinul și datele rămân la tine.",
+    "rentTitle": "Platformă cu abonament",
+    "rentItems": [
+      "Abonamentul crește odată cu cifra de afaceri",
+      "Comisioane pe tranzacții și aplicații plătite în fiecare lună",
+      "Exportul datelor e limitat la ce permite furnizorul",
+      "Furnizorul decide ce funcții urmează"
+    ],
+    "ownTitle": "Colibri Starter",
+    "ownItems": [
+      "Fără abonament la platformă, fără comision la vânzări",
+      "Magazinul și datele îți aparțin",
+      "Schimbi partenerul, găzduirea sau soluția oricând vrei",
+      "Adaptezi funcțiile la afacerea ta"
+    ]
+  },
+  "sovereignty": {
+    "title": "Un magazin independent",
+    "intro": "Tu decizi unde stau magazinul tău și datele clienților tăi.",
+    "options": [
+      {
+        "tag": "Ai propria infrastructură",
+        "title": "Intern",
+        "p": "Pe serverele sau în cloud-ul tău, magazinul se alătură restului sistemului tău informatic."
+      },
+      {
+        "tag": "Lucrezi cu un partener",
+        "title": "Cere sfatul unui expert",
+        "p": "Partenerul tău îți recomandă găzduirea potrivită pentru traficul, bugetul și constrângerile tale."
+      }
+    ],
+    "promiseTitle": "Ce păstrezi",
+    "promiseItems": [
+      "Datele tale, fără dependență de un furnizor",
+      "Libertatea de a schimba găzduirea",
+      "Găzduire în Europa, conformă cu GDPR"
+    ]
+  },
+  "found": {
+    "leadHtml": "Colibri Starter este un set de comenzi Castor (<a href=\"https://castor.jolicode.com\" target=\"_blank\" rel=\"noopener\">stai, ce e Castor?</a>) în jurul unui proiect Sylius standard. Creezi un proiect, apoi adaugi sau elimini funcții pe măsură ce nevoile tale se schimbă. Proiectul rămâne standard: orice echipă Symfony îl poate prelua.",
+    "dev": {
+      "title": "Ești dezvoltator?"
+    },
+    "feats": [
+      {
+        "html": "<code>sylius:init</code> creează proiectul: Docker, Sylius, baza de date, assets, fixtures și teste."
+      },
+      {
+        "html": "<code>sylius:add</code> instalează, configurează și migrează un plugin. <code>sylius:remove</code> îl scoate din nou, cu tot cu configurație și migrări."
+      },
+      {
+        "html": "<code>sylius:theme:setup</code> schimbă tema întregului magazin și o elimină mai întâi pe cea veche."
+      },
+      {
+        "html": "<code>sylius:menu:remove</code> ascunde intrările din back-office de care nu ai nevoie."
+      }
+    ],
+    "ctaGithub": "Vezi pe GitHub ↗",
+    "ctaDoc": "Documentație ↗",
+    "termPath": "~/magazinul-meu",
+    "termLines": [
+      { "type": "cmd", "text": "castor sylius:add cms invoicing" },
+      { "type": "dim", "text": "instalare · configurare · migrare · build" },
+      { "type": "ok", "text": "2 funcții activate" },
+      { "type": "cmd", "text": "castor sylius:remove cms" },
+      { "type": "dim", "text": "și le anulează, curat" },
+      { "type": "ok", "text": "funcție eliminată" },
+      { "type": "cmd", "text": "castor sylius:theme:setup canvas" },
+      { "type": "dim", "text": "schimbă tema întregului magazin" },
+      { "type": "ok", "text": "temă activată" }
+    ]
+  },
+  "ecosystem": {
+    "title": "O fundație dovedită",
+    "intro": "Sylius rulează magazine exigente de peste zece ani. Expertiză în e‑commerce și un istoric de proiecte cu care puține soluții se pot compara.",
+    "link": "Descoperă Sylius ↗",
+    "benefits": [
+      {
+        "title": "Condus de comunitate",
+        "p": "Partenerii, furnizorii de soluții și freelancerii țin proiectul în viață."
+      }
+    ]
+  },
+  "supporters": {
+    "label": "Ne susțin",
+    "logos": []
+  },
+  "event": {
+    "date": "Noiembrie 2026",
+    "title": "Hai să ne vedem la PS Summit",
+    "p": "Primul eveniment open source comun al PrestaShop și Sylius: workshopuri, prezentări tehnice și studii de caz. Vino să ne povestești despre proiectul tău.",
+    "cta": "Programul PS Summit ↗"
+  },
+  "footer": {
+    "product": "Proiectul",
+    "resources": "Resurse"
+  }
+}
