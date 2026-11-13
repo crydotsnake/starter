@@ -193,7 +193,7 @@ const docs = 'https://open-colibri.github.io/starter/docs/';
         <ul class="feats">
           {t.found.feats.map((feat) => (
             <li>
-              <span class="k">–</span>
+              <span class="k">-</span>
               <span class="ft" set:html={feat.html} />
             </li>
           ))}
@@ -255,7 +255,7 @@ const docs = 'https://open-colibri.github.io/starter/docs/';
         <div class="col">
           <h4>{t.footer.resources}</h4>
           <a href={repo} target="_blank" rel="noopener">GitHub ↗</a>
-          <a href={docs} target="_blank" rel="noopener" class="hl">Documentation ↗</a>
+          <a href={docs} target="_blank" rel="noopener" class="hl">{t.found.ctaDoc}</a>
           <a href="https://sylius.com" target="_blank" rel="noopener">Sylius.com ↗</a>
           <a href="https://www.ps-summit.com" target="_blank" rel="noopener" class="hl">PS Summit 2026 ↗</a>
         </div>

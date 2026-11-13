@@ -6,7 +6,8 @@
   "lang": {
     "label": "Langue",
     "en": "EN",
-    "fr": "FR"
+    "fr": "FR",
+    "ro": "RO"
   },
   "redirect": {
     "title": "Redirection…",

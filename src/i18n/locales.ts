@@ -1,6 +1,7 @@
 export const localeConfig = [
   { code: 'en', label: 'English', hreflang: 'en', match: ['en'] },
   { code: 'fr', label: 'Français', hreflang: 'fr', match: ['fr'] },
+  { code: 'ro', label: 'Română', hreflang: 'ro', match: ['ro'] },
 ] as const;
 
 export type Locale = (typeof localeConfig)[number]['code'];
