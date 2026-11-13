@@ -2,7 +2,7 @@
 
 Static multi-lang landing page, built with [Astro](https://astro.build).
 
-Live (GitHub Pages project site): [https://the-swan-foundation.github.io/the-swan-starter-website/](https://the-swan-foundation.github.io/the-swan-starter-website/)
+Live (GitHub Pages project site): [https://the-swan-foundation.github.io/starter/](https://the-swan-foundation.github.io/starter/)
 
 ## Prerequisites
 
@@ -12,12 +12,12 @@ Live (GitHub Pages project site): [https://the-swan-foundation.github.io/the-swa
 
 ```bash
 npm install     # install dependencies
-npm run dev     # http://localhost:4321/the-swan-starter-website/
+npm run dev     # http://localhost:4321/starter/
 npm run build   # output to dist/
-npm run preview # http://localhost:4321/the-swan-starter-website/ after build
+npm run preview # http://localhost:4321/starter/ after build
 ```
 
-`astro.config.mjs` defaults to `SITE_URL=https://the-swan-foundation.github.io` and `ASTRO_BASE=/the-swan-starter-website/`, so local and CI builds need no extra variables. The dev server serves the site at http://localhost:4321/the-swan-starter-website/.
+`astro.config.mjs` defaults to `SITE_URL=https://the-swan-foundation.github.io` and `ASTRO_BASE=/starter/`, so local and CI builds need no extra variables. The dev server serves the site at http://localhost:4321/starter/.
 
 ## Editing content
 
@@ -35,11 +35,19 @@ The root `/` page redirects to the visitor's browser language (English by defaul
 
 ## GitHub Pages
 
-The workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) builds the site with `withastro/action` and deploys `dist/` with `actions/deploy-pages` on every push to `main` (or manually via *Run workflow*).
+The workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) builds the site, builds the documentation
+website ([the-swan-foundation/the-swan-starter-docs](https://github.com/the-swan-foundation/the-swan-starter-docs), with
+the pages of the `docs/` folder of the [monorepo](https://github.com/the-swan-foundation/the-swan-starter)) with the
+`/starter/docs/` base, copies it to `dist/docs/` and deploys `dist/` with `actions/deploy-pages`. The documentation is
+therefore served at [https://the-swan-foundation.github.io/starter/docs/](https://the-swan-foundation.github.io/starter/docs/):
+never add a `docs` page or folder to this site.
+
+It runs on every push to `main`, on the `docs-updated` repository dispatch (sent by the documentation repository and by
+the monorepo when the documentation changes) and manually via *Run workflow*.
 
 In the repository settings, **Settings → Pages → Build and deployment → Source** must be set to **GitHub Actions**. With "Deploy from a branch", GitHub also runs its default Jekyll build on the raw sources, which fails on the `.astro` files.
 
-The repository is not named `the-swan-foundation.github.io`, so GitHub Pages serves it as a project site, under the `/the-swan-starter-website/` sub-path. There is no `public/CNAME`.
+The repository is not named `the-swan-foundation.github.io`, so GitHub Pages serves it as a project site, under the `/starter/` sub-path. There is no `public/CNAME`.
 
 ### Custom domain (later)
 
