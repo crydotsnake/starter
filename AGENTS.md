@@ -8,6 +8,8 @@ The user may edit files manually between sessions. Do not overwrite their change
 
 ## Source of truth
 
+The documentation website lives in `docs-site/`, with its own `package.json`: see `docs-site/AGENTS.md`.
+
 The site is built with **Astro** from `src/`.
 
 | Action | File |
