@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Colibri Starter · Ihr souveräner Onlineshop, startklar in wenigen Tagen",
+    "description": "Colibri Starter ist ein Kommandozeilen-Tool, das Ihren kompletten Onlineshop mit einem einzigen Befehl erstellt. Hosten Sie ihn, wo Sie möchten, ohne Provision auf Ihre Umsätze."
+  },
+  "lang": {
+    "label": "Sprache",
+    "en": "EN",
+    "fr": "FR",
+    "ro": "RO",
+    "de": "DE"
+  },
+  "redirect": {
+    "title": "Weiterleitung…",
+    "manual": "Sprache wählen:"
+  },
+  "announce": {
+    "tag": "Neu",
+    "textHtml": "Mitwirkende: Machen Sie mit, Colibri Starter entsteht gemeinsam."
+  },
+  "nav": {
+    "why": "Warum Colibri Starter",
+    "sovereignty": "Souveränität",
+    "developers": "Entwickler",
+    "github": "GitHub ↗",
+    "menu": "Menü"
+  },
+  "hero": {
+    "title": "Ihr souveräner Onlineshop, startklar in wenigen Tagen.",
+    "leadHtml": "Colibri Starter ist ein Kommandozeilen-Tool, das Ihren kompletten Onlineshop erstellt, bereit zur Anpassung durch Ihr Team oder einen Partner. Hosten Sie ihn, wo Sie möchten, <strong>ohne Provision auf Ihre Umsätze</strong>.",
+    "alt": "Beispiel eines Sylius-Shops: Produktseite"
+  },
+  "own": {
+    "title": "Warum Sie eine Abo-Plattform verlassen sollten",
+    "intro": "Auf einer Abo-Plattform zahlen Sie jeden Monat, oft zusätzlich eine Provision auf Ihre Umsätze, und Ihre Daten bleiben beim Anbieter. Mit Colibri Starter bleiben Ihr Shop und Ihre Daten bei Ihnen.",
+    "rentTitle": "Abo-Plattform",
+    "rentItems": [
+      "Das Abo steigt mit Ihrem Umsatz",
+      "Transaktionsgebühren und kostenpflichtige Apps, jeden Monat",
+      "Datenexport nur im Rahmen dessen, was der Anbieter erlaubt",
+      "Die Roadmap bestimmt der Anbieter"
+    ],
+    "ownTitle": "Colibri Starter",
+    "ownItems": [
+      "Kein Plattform-Abo, keine Provision auf Umsätze",
+      "Ihr Shop und Ihre Daten gehören Ihnen",
+      "Wechseln Sie Partner, Hoster oder Lösung, wann immer Sie wollen",
+      "Passen Sie die Funktionen an Ihr Geschäft an"
+    ]
+  },
+  "sovereignty": {
+    "title": "Ein souveräner Shop",
+    "intro": "Sie entscheiden, wo Ihr Shop und die Daten Ihrer Kunden liegen.",
+    "options": [
+      {
+        "tag": "Sie haben eine eigene Infrastruktur",
+        "title": "Inhouse",
+        "p": "Auf Ihren Servern oder in Ihrer Cloud fügt sich Ihr Shop in Ihre bestehende IT-Landschaft ein."
+      },
+      {
+        "tag": "Sie arbeiten mit einem Partner",
+        "title": "Lassen Sie sich beraten",
+        "p": "Ihr Partner empfiehlt das Hosting, das zu Ihrem Traffic, Ihrem Budget und Ihren Anforderungen passt."
+      }
+    ],
+    "promiseTitle": "Was Sie behalten",
+    "promiseItems": [
+      "Ihre Daten, ohne Abhängigkeit von einem Anbieter",
+      "Die Freiheit, den Hoster zu wechseln",
+      "Hosting in Europa, DSGVO-konform"
+    ]
+  },
+  "found": {
+    "leadHtml": "Colibri Starter ist eine Sammlung von Castor-Befehlen (<a href=\"https://castor.jolicode.com\" target=\"_blank\" rel=\"noopener\">Moment, was ist Castor?</a>) rund um ein Standard-Sylius-Projekt. Sie erstellen ein Projekt und fügen dann Funktionen hinzu oder entfernen sie, wenn sich Ihre Anforderungen ändern. Ihr Projekt bleibt Standard: Jedes Symfony-Team kann es übernehmen.",
+    "dev": {
+      "title": "Sie sind Entwickler?"
+    },
+    "feats": [
+      {
+        "html": "<code>sylius:init</code> erstellt das Projekt: Docker, Sylius, Datenbank, Assets, Fixtures und Tests."
+      },
+      {
+        "html": "<code>sylius:add</code> installiert, konfiguriert und migriert ein Plugin. <code>sylius:remove</code> entfernt es wieder, inklusive Konfiguration und Migrationen."
+      },
+      {
+        "html": "<code>sylius:theme:setup</code> wechselt das komplette Shop-Theme und entfernt vorher das bisherige."
+      },
+      {
+        "html": "<code>sylius:menu:remove</code> blendet Backoffice-Einträge aus, die Sie nicht brauchen."
+      }
+    ],
+    "ctaGithub": "Auf GitHub ansehen ↗",
+    "ctaDoc": "Dokumentation ↗",
+    "termPath": "~/mein-shop",
+    "termLines": [
+      { "type": "cmd", "text": "castor sylius:add cms invoicing" },
+      { "type": "dim", "text": "installieren · konfigurieren · migrieren · bauen" },
+      { "type": "ok", "text": "2 Funktionen aktiviert" },
+      { "type": "cmd", "text": "castor sylius:remove cms" },
+      { "type": "dim", "text": "und macht es sauber rückgängig" },
+      { "type": "ok", "text": "Funktion entfernt" },
+      { "type": "cmd", "text": "castor sylius:theme:setup canvas" },
+      { "type": "dim", "text": "wechselt das komplette Shop-Theme" },
+      { "type": "ok", "text": "Theme aktiviert" }
+    ]
+  },
+  "ecosystem": {
+    "title": "Eine bewährte Grundlage",
+    "intro": "Sylius betreibt seit mehr als zehn Jahren anspruchsvolle Onlineshops. E‑Commerce-Expertise und eine Projekthistorie, mit der nur wenige Lösungen mithalten können.",
+    "link": "Sylius entdecken ↗",
+    "benefits": [
+      {
+        "title": "Von der Community getragen",
+        "p": "Partner, Lösungsanbieter und Freelancer halten das Projekt lebendig."
+      }
+    ]
+  },
+  "supporters": {
+    "label": "Sie unterstützen Colibri Starter",
+    "logos": []
+  },
+  "event": {
+    "date": "November 2026",
+    "title": "Treffen Sie uns auf dem PS Summit",
+    "p": "Das erste gemeinsame Open-Source-Event von PrestaShop und Sylius: Workshops, technische Vorträge und Fallstudien. Sprechen Sie uns auf Ihr Projekt an.",
+    "cta": "PS-Summit-Programm ↗"
+  },
+  "footer": {
+    "product": "Das Projekt",
+    "resources": "Ressourcen"
+  }
+}
