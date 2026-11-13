@@ -1,12 +1,14 @@
 name: Deploy to GitHub Pages
 
 # Deploys the website at https://the-swan-foundation.github.io/starter/ and the documentation
-# (the-swan-foundation/the-swan-starter-docs, pages from the docs/ folder of the monorepo) under /starter/docs/.
+# (docs-site/, pages from the docs/ folder of the monorepo) under /starter/docs/.
+# Pull requests only build both.
 
 on:
   push:
     branches: [main]
-  # Sent by the documentation repository and by the monorepo when the documentation changes.
+  pull_request:
+  # Sent by the monorepo when its docs/ change on main.
   repository_dispatch:
     types: [docs-updated]
   workflow_dispatch:
@@ -17,7 +19,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: ${{ github.event_name == 'pull_request' && github.ref || 'pages' }}
   cancel-in-progress: false
 
 jobs:
@@ -26,11 +28,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-      - name: Checkout the documentation website
-        uses: actions/checkout@v7
-        with:
-          repository: the-swan-foundation/the-swan-starter-docs
-          path: .docs-site
       - name: Checkout the documentation pages
         uses: actions/checkout@v7
         with:
@@ -44,13 +41,13 @@ jobs:
           cache: npm
           cache-dependency-path: |
             package-lock.json
-            .docs-site/package-lock.json
+            docs-site/package-lock.json
       - name: Build the website
         run: |
           npm ci
           npm run build
       - name: Build the documentation
-        working-directory: .docs-site
+        working-directory: docs-site
         run: |
           npm ci
           npm run build
@@ -60,14 +57,16 @@ jobs:
       - name: Add the documentation to the website
         run: |
           test ! -e dist/docs
-          cp -R .docs-site/dist dist/docs
+          cp -R docs-site/dist dist/docs
       - name: Upload the site
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
